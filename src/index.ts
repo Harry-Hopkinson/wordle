@@ -11,7 +11,7 @@ const wordlePrompt = {
     validate: value => value.length != 5 ? "Word must be 5 Letters" : true
 };
 
-async function check(guess) {
+async function check(guess: { [x: string]: any; }) {
     var results = [];
 
     for (let i in guess) {
