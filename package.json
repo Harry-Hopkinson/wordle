@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc --build",
     "watch": "tsc --watch",
-    "start" : "ts-node src/index.ts"
+    "start": "ts-node src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/Harry-Hopkinson/wordle/issues"
   },
-  "homepage": "https://github.com/Harry-Hopkinson/wordle#readme"
+  "homepage": "https://github.com/Harry-Hopkinson/wordle#readme",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.12"
+  }
 }
