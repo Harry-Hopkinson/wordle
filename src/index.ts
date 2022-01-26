@@ -1,14 +1,14 @@
-const prompts = require("prompts");
-const chalk = require("chalk");
-const wordList = require("./words.json")
+import prompts from "prompts";
+import chalk from "chalk";
+import { wordList } from "./words"
 
 var puzzle = "";
 
-const wordlePrompt = {
+const wordlePrompt : any = {
     type: "text",
     name: "word",
     message: "Enter a 5 Letter Word...",
-    validate: value => value.length != 5 ? "Word must be 5 Letters" : true
+    validate: (value: string | any[]) => value.length != 5 ? "Word must be 5 Letters" : true
 };
 
 async function check(guess: { [x: string]: any; }) {

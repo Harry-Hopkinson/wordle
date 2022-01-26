@@ -1,4 +1,4 @@
-[
+export const wordList : any = [
     "Abuse",
     "Adult",
     "Agent",
@@ -211,4 +211,4 @@
     "Woman",
     "World",
     "Youth"
-  ]
+]
