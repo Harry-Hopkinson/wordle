@@ -30,3 +30,22 @@ async function check(guess: { [x: string]: any; }) {
     }
     return results;
 }
+
+async function play(tries: number) {
+    if (tries < 6) {
+        const response = await prompts(wordlePrompt);
+        const guess = response.word.toUpperCase();
+
+        if (guess == puzzle) {
+            console.log("You are a WINNER!");
+        }
+        else {
+            check(guess);
+            process.stdout.write("\n");
+            play(tries ++);
+        }
+    }
+    else {
+        console.log(`Incorrect: The word was ${puzzle}`);
+    }
+}
