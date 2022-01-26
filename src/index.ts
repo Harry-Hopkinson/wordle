@@ -49,3 +49,11 @@ async function play(tries: number) {
         console.log(`Incorrect: The word was ${puzzle}`);
     }
 }
+
+async function main() {
+    const randomNumber = Math.floor(Math.random(wordList.length) * wordList.length);
+    puzzle = wordList[randomNumber].toUpperCase();
+    await play(0);
+}
+
+main();
