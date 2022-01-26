@@ -1,0 +1,22 @@
+{
+  "name": "wordle",
+  "version": "1.0.0",
+  "description": "A wordle clone written in Typescript",
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "watch": "tsc --watch",
+    "start" : "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harry-Hopkinson/wordle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harry-Hopkinson/wordle/issues"
+  },
+  "homepage": "https://github.com/Harry-Hopkinson/wordle#readme"
+}

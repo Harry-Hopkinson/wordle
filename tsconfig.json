@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "rootDir": "./src",
+      "outDir": "./build",
+      "allowJs": true,                                 
+      "checkJs": true,
+      "esModuleInterop": true,                             
+      "forceConsistentCasingInFileNames": true,   
+      "strict": false,
+      "skipLibCheck": true
+    }
+  }
