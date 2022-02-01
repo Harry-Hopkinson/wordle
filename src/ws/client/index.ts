@@ -47,7 +47,7 @@ function setSessionId(cnx: WS, message: Message) {
 
 export function createWS(url = URL, port = 8080): Promise<WS> {
   return new Promise(keep => {
-    const ws = new WebSocket(`ws://${url}`)
+    const ws : any = new WebSocket(`ws://${url}`)
 
     ws.on('open', function () {
       console.log('Connection Established with', ws.url)

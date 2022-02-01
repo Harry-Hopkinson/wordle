@@ -25,7 +25,7 @@ import {
     })
   
     const cycle = setInterval(function () {
-      wss.clients.forEach((client, i) => {
+      wss.clients.forEach((client : any, i) => {
         if (client.is_alive === false) {
           remove(client)
           return
@@ -40,7 +40,7 @@ import {
       clearInterval(cycle)
     })
   
-    wss.on('connection', function (cnx) {
+    wss.on('connection', function (cnx : any) {
       if (wss.clients.size >= MAX_CNX) {
         err(cnx, 'overload')
         cnx.close()

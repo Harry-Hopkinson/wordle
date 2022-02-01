@@ -1,7 +1,7 @@
 import * as ws from 'ws';
 import { Option } from './structs';
-export declare const WebSocketServer: any;
-export declare const WebSocket: any;
+export declare const WebSocketServer: typeof ws.Server;
+export declare const WebSocket: typeof ws;
 export interface WS extends ws.WebSocket {
     user_id: string;
     session_id: string;
