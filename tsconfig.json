@@ -1,14 +1,21 @@
 {
-    "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs",
-      "rootDir": "./src",
-      "outDir": "./build",
-      "allowJs": true,                                 
-      "checkJs": true,
-      "esModuleInterop": true,                             
-      "forceConsistentCasingInFileNames": true,   
-      "strict": false,
-      "skipLibCheck": true
-    }
-  }
+  "compilerOptions": {
+    "strict": false,
+    "outDir": "./build",
+    "allowJs": true,
+    "target": "ES2021",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "plugins": [
+      {
+        "name": "typescript-strict-plugin"
+      }
+    ]
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}

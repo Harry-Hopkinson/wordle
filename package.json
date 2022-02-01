@@ -4,9 +4,10 @@
   "description": "A wordle clone written in Typescript",
   "main": "./src/index.ts",
   "scripts": {
-    "build": "tsc --build",
-    "watch": "tsc --watch",
-    "start": "ts-node src/index.ts"
+    "help": "tsc && node dist/src/cli --help",
+    "play": "tsc && node dist/src/cli play",
+    "join": "tsc && node dist/src/cli join",
+    "serve": "tsc && node dist/src/cli serve"
   },
   "repository": {
     "type": "git",
